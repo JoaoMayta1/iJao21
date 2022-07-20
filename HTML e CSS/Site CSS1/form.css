@@ -1,0 +1,74 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+main{
+    background-color: brown;
+    width: 70%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+}
+aside{
+    background-image:url('imagens/img03.png');
+    width: 30%;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+h1{
+    color: whitesmoke;
+    font-style: italic;
+    font-variant-caps: all-petite-caps;
+    border: 2px;
+    border-style: dotted;
+}
+h3{
+    color: whitesmoke;
+}
+.prin{
+    background-image: url('imagens/img03.png');
+}
+.lat{
+    background-image: url('imagens/img02.jpg');
+    color: brown;
+}
+.check{
+    color: lightgray;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: left;
+    list-style: url('imagens/img04.png');
+}
+span{
+    text-decoration: underline;
+    color: gold;
+}
+table{
+    margin: auto;
+}
+td{
+    border: 3px;
+    border-style: dashed ; color: indianred;
+}
+h1:hover{
+    background-color: crimson;
+    color: lightpink;
+    border-color: lightpink;
+}
+span:hover{
+    background-color: crimson;
+    color: lightpink;
+    border-color: lightpink;
+}
+h3:hover{
+    color: indianred;
+}
+td:hover{
+    transform: rotate(-5deg);
+    border: 5px;
+    border-style: double; color: gold;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tarefas = [
+            ["Trabalho", 1],
+            ["Comida", 2],
+            ["Comunidade", 3],
+            ["Video Game", 4],
+            ["Domir", 5],
+        ];
+        tarefas.push(["Onibus", 3,]);
+        tarefas.splice(2, 1);
+        tarefas.forEach(x);
+        function x (item){
+            tarefas[0][5]='joao';
+        };
+        console.table(tarefas);
+    </script>
+</body>
+</html>

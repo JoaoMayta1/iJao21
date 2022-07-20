@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Encomendar Bolos</title>
+</head>
+<body>
+    <header>
+        <h1>Pães Doces e Bolos</h1>
+        <ul>
+            <li><a href="Index.html">Pagina Principal</a></li>
+            <li><a href="Index2.html">Encomendar Bolo</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Encomendar Bolos</h2>
+        <form action="Encomendas" method="get"> 
+            Nome: <input type= text name="nome" placeholder="Informe o Nome" size="35" maxlength="35" autofocus>
+            DDD (<input type= text name="DDD" placeholder="DDD" size="2" maxlength="2">)
+            Telefone: <input type= text name="Telefone" placeholder="Telefone" size="10" maxlength="10"> <br> <br>
+            <table border>
+                <caption>Bolos</caption>
+                <tr>
+                    <th><img src="Imagens/Bolo01.png" alt="Bolo de Chocolate" width="200"></th>
+                    <th><img src="Imagens/Bolo02.png" alt="Bolo de Frutas" width="200"></th>
+                    <th><img src="Imagens/Bolo03.png" alt="Bolo Misto" width="200"></th>
+                </tr>
+                <tr>
+                    <th>Chocolate</th>
+                    <th>Frutas</th>
+                    <th>Misto</th>
+                </tr>
+            </table> <br>
+            Sabor <select name="sabor">
+                <option value="null" disabled selected="selected">Escolha...</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Frutas">Frutas</option>
+                <option value="Misto">Misto</option>
+            </select>
+            Tipo:
+                <input type="radio" name="simples" value="simp">Basico 
+                <input type="radio" name="decorado" value="deco">Decorado <br> <br>
+            Tamanho: <input type="number" name="tamanho" max="10">Kg
+            <input type="checkbox"> Diet? <br> <br>
+            Observações: <br>
+                <textarea name="obs" cols="80" rows="3" placeholder="Observações sobre o Pedido"></textarea> <br> <br>
+            <input type="reset" name="reset" value="Limpar">
+            <input type="submit" name="Enviar" value="Enviar Pedido">
+        </form>
+    </main>
+</body>
+</html>

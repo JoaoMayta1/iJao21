@@ -1,0 +1,79 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    background-color:rgb(218, 218, 218); 
+    
+}
+header{
+    background-color: rgb(218, 218, 218);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 5;
+    font-size: 50pt; color: rgb(61, 61, 61);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+nav{
+    background-color: rgb(218, 218, 218);
+    width: 15%;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: -10px;
+    font-size: 20pt; color: rgb(61, 61, 61);
+    position: fixed;
+    top: 80px;
+    right: 0%;
+    margin-left: 100px;
+}
+main{
+    background-color: rgb(37, 37, 37);
+    width: 85%;
+    min-height: 100%;
+    position: absolute;
+    top: 80px;
+    border-top: 2px;
+    border-right: 2px; 
+    border-style: dotted; border-color: rgb(255,250,250);
+}
+p{
+    color: rgb(255,250,250);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 16pt;
+    text-align: center;
+}
+span{
+    color: rgb(255,165,0);
+}
+.alin{
+    text-align: right;
+    color: yellow;
+    margin-right: 20px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.cont{
+    margin: auto;
+    margin-top: 20px;
+}
+.destaque{
+    font-size: 36pt;
+}
+caption{
+    color: rgb(30,144,255);
+    font-weight: bolder;
+    border: 2px;
+    border-style: double; border-color: rgb(250,250,250);
+}
+.itens{
+    padding: 10px;
+    color: rgb(250,250,250);
+    text-align: left;
+    font-size: 14pt;
+    border: 2px;
+    border-style: double; border-color: rgb(250,250,250);
+}

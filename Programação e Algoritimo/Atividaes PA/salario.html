@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Digite seu salario</p>
+
+    <input id="demo" type="text">
+    <button type="button" onclick="fsoma()">Test Input</button>
+    <p id="p01"></p>
+    
+    <script>
+        function fsoma() {
+          const message = document.getElementById("p01");
+          message.innerHTML = "";
+          let x = document.getElementById("demo").value;
+          try {
+            if(x == "") throw "vazio";
+            if(isNaN(x)) throw "não é um numero";
+            x = Number(x);
+          }
+          catch(err) {
+            message.innerHTML = "Input " + err;
+          }
+          try{
+            if(x > 0 && x < 3001) throw "15%";
+            if(x > 3001 && x < 6001) throw "20%";
+            if(x > 6001) throw "27,5%";
+          }
+          catch(err) {
+            message.innerHTML = "Seu IR é " + err;
+          }
+        }
+    </script>
+</body>
+</html>

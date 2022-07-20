@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Digite numero 1</p>
+    <input id="n1" type="text">
+
+    <p>Digite numero 2</p>
+    <input id="n2" type="text"> <br> <br>
+
+    <button type="button" onclick="fsoma(), teste()">Soma</button>
+    <button type="button" onclick="fsub(), teste()">Substração</button>
+    <button type="button" onclick="fmult(), teste()">Multiplicação</button>
+    <button type="button" onclick="fdiv(), teste()">Divisão</button>
+    <p id="result"></p>
+    
+    <script>
+
+        var result = 0;
+        const message = document.getElementById("result");
+        message.innerHTML = "aguardando...";
+        function teste() {
+            try {
+                var num1 = document.getElementById("n1").value;
+                var num2 = document.getElementById("n2").value;
+                if(num1 == "" || num2 == "") throw "Caixa Vazia";
+                if(isNaN(num1) || isNaN(num2)) throw "Digite um Numero";
+                num1 = Number(num1);
+                num2 = Number(num2);
+            }
+            catch(err) {
+                message.innerHTML = "Erro: " + err;
+            }
+        }
+        function fsoma(){
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            result = num1 + num2;
+            message.innerHTML = result;
+        }
+        function fsub(){
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            result = num1 - num2;
+            message.innerHTML = result;
+        }
+        function fmult(){
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            result = num1 * num2;
+            message.innerHTML = result;
+        }
+        function fdiv(){
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            result = num1 / num2;
+            message.innerHTML = result;
+        }
+    </script>
+</body>
+</html>
