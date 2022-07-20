@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var peso = parseFloat(prompt("Digite seu peso"));
+        var altura = parseFloat(prompt("Digite sua altura em kg"));
+        var IMC = ((peso)/(altura*altura));
+        alert(IMC);
+        if(IMC <= 18.5){
+            alert("abaixo do peso");
+        }else if(IMC <= 25){
+            alert("peso normal");
+        }else if(IMC <= 30){
+            alert("acima do peso");
+        }else if(IMC > 30){
+            alert("OBESO");
+        }
+    </script>
+</body>
+</html>

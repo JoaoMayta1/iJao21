@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var conceito;
+        var nAluno = parseInt(prompt("Digite o nome do aluno"));
+        var nota1 = parseInt(prompt("Digite a Nota 1"));
+        var nota2 = parseInt(prompt("Digite a Nota 2"));
+        var nota3 = parseInt(prompt("Digite a Nota 3"));
+
+        mediaExercicios = (nota1 + nota2 + nota3)/3;
+	    mediaAproveitamento = (nota1 + (nota2*2) + (nota3*3) + mediaExercicios)/7;
+        if(mediaAproveitamento >= 90){
+            conceito = "A";
+            alert(conceito)
+        }else if(mediaAproveitamento >= 75){
+            conceito = "B";
+            alert(conceito)
+        }else if(mediaAproveitamento >= 60){
+            conceito = "C";
+            alert(conceito)
+        }else if(mediaAproveitamento >= 40){
+            conceito = "D";
+            alert(conceito)
+        }else if(mediaAproveitamento < 40){
+            conceito = "E";
+            alert(conceito)
+        }
+    </script>
+</body>
+</html>

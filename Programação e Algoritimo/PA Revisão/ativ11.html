@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var h = parseFloat(prompt("Digite sua Altura"));
+        var bool1 = confirm("Homem = Confirm; Mulher = Cancel");
+        if(bool1 == true){
+            var peso = ((72.7 * h) - 58);
+            alert("Seu peso idel em kg é "+peso);
+        }else if (bool1 == false){
+            var peso = ((62.1 * h) - 44.7);
+            alert("Seu peso idel em kg é "+peso);
+        }
+    </script>
+</body>
+</html>
